@@ -1,0 +1,21 @@
+@import "font.css";
+@import "nav.css";
+*,html,body{
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+:root{
+    --primary: #6546E7;
+    --warning: #FFBE12;
+    --danger: #F3431D;
+    --success: #68DCA6;
+}
+
+.d-none{
+    display: none;
+}
