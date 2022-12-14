@@ -5,5 +5,5 @@
             echo "<script>console.log('Connection successful')</script>";
         }
     }catch(Exception $e){
-        echo "<script>console.log('Error $e')</script>";
+        die("<script>console.log('Error $e')</script>");
     }

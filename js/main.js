@@ -26,3 +26,24 @@ $('#triggerNavBtn').click(function (){
 
     isHiddenNavOpen = !isHiddenNavOpen
 })
+
+
+
+window.addEventListener('scroll',function (event){
+    var t = document.body.scrollTop || document.documentElement.scrollTop;
+    if (t > 500) {
+        document.querySelector("#goToTop").classList.remove('hide-goto-top');
+        document.querySelector("#goToTop").classList.add('show-goto-top');
+    } else {
+        document.querySelector("#goToTop").classList.remove('show-goto-top');
+        document.querySelector("#goToTop").classList.add('hide-goto-top');
+    }
+})
+
+
+$('#goToTop').click(function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+})
